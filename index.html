@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Do'kon</title>
+    <link rel="stylesheet" href="сонғы ксс.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🛍️ OnlineShop</div>
+
+        <nav>
+            <a href="#home">Bosh sahifa</a>
+            <a href="#products">Mahsulotlar</a>
+            <a href="#cart">Savatcha</a>
+            <a href="#orders">Buyurtmalar</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Online do'konimizga xush kelibsiz!</h1>
+        <p>O'zingizga kerakli mahsulotlarni qulay va tez xarid qiling.</p>
+        <a href="#products" class="main-btn">Xarid qilish</a>
+    </section>
+
+    <main class="container">
+
+        <section id="products">
+            <h2>🛒 Mahsulotlar katalogi</h2>
+
+            <input type="text"
+                   id="search"
+                   placeholder="Mahsulot qidirish...">
+
+            <div class="products" id="productList"></div>
+        </section>
+
+        <section id="cart">
+            <h2>🛍️ Savatcha</h2>
+
+            <div id="cartList"></div>
+
+            <div class="total">
+                Jami: <span id="total">0</span> so'm
+            </div>
+
+            <button class="checkout-btn" onclick="checkout()">
+                Buyurtma berish
+            </button>
+        </section>
+
+        <section id="orders">
+            <h2>📦 Buyurtmalarni boshqarish</h2>
+
+            <div id="orderList"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 OnlineShop. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="сонғы жс.js"></script>
+
+</body>
+</html>
